@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supercar Rental</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Supercar Rental</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#cars">Cars</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="home" class="hero-section">
+    <div class="container text-center">
+      <h1>Drive Your Dream Supercar</h1>
+      <p>Rent the most luxurious and powerful cars in the world</p>
+      <a href="#cars" class="btn btn-primary">View Cars</a>
+    </div>
+  </header>
+
+ <!-- About Section -->
+<section id="about" class="about-section py-5">
+  <div class="container">
+    <h2 class="text-center">About Us</h2>
+    <p class="text-center">We provide the ultimate supercar rental experience. Our founders bring a passion for luxury and performance to the forefront of our business.</p>
+    
+    <!-- Founders Section -->
+    <div class="row text-center mt-4">
+      <!-- Founder 1 -->
+      <div class="col-md-4">
+        <div class="founder">
+          <img src="./images/founder1.jpg" alt="Founder 1" class="founder-img">
+          <h5>MOHAMMED SAAQIB</h5>
+          <p>CEO & Co-Founder</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="founder">
+          <img src="./images/founder3.jpg" alt="Founder 2" class="founder-img">
+          <h5>SANJAY</h5>
+          <p>CTO & Co-Founder</p>
+        </div>
+      </div>
+      <!-- Founder 2 -->
+      <div class="col-md-4">
+        <div class="founder">
+          <img src="./images/founder4.jpg" alt="Founder 2" class="founder-img">
+          <h5>BHARATH KUMAR</h5>
+          <p>CTO & Co-Founder</p>
+        </div>
+      </div>
+      <!-- Founder 3 -->
+      <div class="col-md-4">
+        <div class="founder">
+          <img src="./images/founder2.jpg" alt="Founder 3" class="founder-img">
+          <h5>VIGNESH</h5>
+          <p>COO & Co-Founder</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Cars Section -->
+  <section id="cars" class="cars-section py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center">Our Cars</h2>
+      <div class="row">
+        <!-- Sample Car Item -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="./images/carf1.jpg" class="card-img-top" alt="Ferrari">
+            <div class="card-body">
+              <h5 class="card-title">Ferrari</h5>
+              <p class="card-text">Experience the thrill of a Ferrari. Price: $500/day.</p>
+              <button class="btn btn-primary rent-btn" data-car="Ferrari">Rent Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- Add more cars as needed -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="./images/car2.jpg" class="card-img-top" alt="Lambo">
+            <div class="card-body">
+              <h5 class="card-title">Lambo</h5>
+              <p class="card-text">Experience the thrill of a Lambo. Price: $300/day.</p>
+              <button class="btn btn-primary rent-btn" data-car="Lambo">Rent Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="./images/car3.jpg" class="card-img-top" alt="Bugatti">
+            <div class="card-body">
+              <h5 class="card-title">Bugatti</h5>
+              <p class="card-text">Experience the thrill of a Bugatti. Price: $1000/day.</p>
+              <button class="btn btn-primary rent-btn" data-car="Bugatti">Rent Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section py-5">
+    <div class="container">
+      <h2 class="text-center">Contact Us</h2>
+      <form id="contact-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea class="form-control" id="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer bg-dark text-white py-3 text-center">
+    <p>&copy; 2024 Supercar Rental. All rights reserved.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/scripts.js"></script>
+</body>
+</html>
